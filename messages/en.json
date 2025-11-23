@@ -1,0 +1,148 @@
+{
+  "nav": {
+    "home": "Home",
+    "blog": "Blog",
+    "media": "Media",
+    "volunteer": "Volunteer",
+    "login": "Login"
+  },
+  "hero": {
+    "badge": "July Mass Uprising 2024",
+    "title": "Vote YES for July Charter",
+    "subtitle": "Fulfill the martyrs' dream. Build a New Bangladesh.",
+    "cta": "Become a Volunteer",
+    "learnMore": "Learn More",
+    "stats": {
+      "martyrs": "Martyrs",
+      "volunteers": "Volunteers",
+      "future": "New Future"
+    },
+    "scrollDown": "Scroll Down"
+  },
+  "features": {
+    "title": "Why July Charter?",
+    "subtitle": "The Constitution Written in Martyrs' Blood",
+    "items": {
+      "democracy": {
+        "title": "True Democracy",
+        "description": "Returning power to the people"
+      },
+      "rights": {
+        "title": "Fundamental Rights",
+        "description": "Equal opportunities and justice for all"
+      },
+      "future": {
+        "title": "Better Future",
+        "description": "New possibilities for the young generation"
+      },
+      "unity": {
+        "title": "National Unity",
+        "description": "Unity of all ethnicities, religions, and races"
+      }
+    }
+  },
+  "cta": {
+    "title": "Join Our Movement Today",
+    "subtitle": "Every YES vote is a tribute to the martyrs",
+    "button": "Volunteer Registration"
+  },
+  "volunteer": {
+    "title": "Volunteer Registration",
+    "subtitle": "Join us to make the martyrs' dream a reality",
+    "step": "Step",
+    "of": "of",
+    "previous": "Previous",
+    "next": "Next",
+    "submit": "Submit",
+    "submitting": "Submitting...",
+    "step1Title": "Personal Information",
+    "step2Title": "Social Media",
+    "step3Title": "Volunteer Types",
+    "step4Title": "Organization",
+    "fullName": "Full Name",
+    "fullNamePlaceholder": "Enter your name",
+    "mobile": "Mobile Number",
+    "mobilePlaceholder": "01XXXXXXXXX",
+    "email": "Email (Optional)",
+    "emailPlaceholder": "your@email.com",
+    "facebook": "Facebook (Optional)",
+    "facebookPlaceholder": "https://facebook.com/yourprofile",
+    "twitter": "Twitter (Optional)",
+    "twitterPlaceholder": "https://twitter.com/yourprofile",
+    "instagram": "Instagram (Optional)",
+    "instagramPlaceholder": "https://instagram.com/yourprofile",
+    "volunteerTypes": "What type of volunteering are you interested in?",
+    "types": {
+      "field": "Field Work",
+      "social": "Social Media Campaign",
+      "content": "Content Creation",
+      "translation": "Translation",
+      "event": "Event Organization",
+      "any": "Any Type of Work"
+    },
+    "hasOrganization": "Are you affiliated with any organization?",
+    "yes": "Yes",
+    "no": "No",
+    "organizationName": "Organization Name",
+    "organizationPlaceholder": "Enter organization name",
+    "success": {
+      "title": "Thank You!",
+      "message": "Your registration has been successfully submitted. We will contact you soon.",
+      "shareMessage": "Share with friends",
+      "shareTitle": "I'm a volunteer for the YES Vote for July Charter movement! Join us too.",
+      "backHome": "Back to Home"
+    },
+    "errors": {
+      "submitError": "Something went wrong. Please try again."
+    }
+  },
+  "blog": {
+    "title": "Blog",
+    "subtitle": "Learn about the July Charter",
+    "featured": "Featured",
+    "readMore": "Read More",
+    "views": "Views",
+    "likes": "Likes",
+    "share": "Share",
+    "shareOn": "Share on",
+    "relatedPosts": "Related Posts"
+  },
+  "media": {
+    "title": "Media Gallery",
+    "subtitle": "Photos & Videos from the Mass Uprising",
+    "tabs": {
+      "all": "All",
+      "martyrs": "Martyrs",
+      "protests": "Protests",
+      "youth": "Youth",
+      "campaign": "Campaign",
+      "general": "General"
+    },
+    "noMedia": "No media in this category",
+    "download": "Download",
+    "share": "Share",
+    "close": "Close"
+  },
+  "footer": {
+    "about": {
+      "title": "About Us",
+      "description": "YES Vote for July Charter movement. We are committed to fulfilling the martyrs' dream."
+    },
+    "links": {
+      "title": "Links",
+      "home": "Home",
+      "blog": "Blog",
+      "media": "Media",
+      "volunteer": "Volunteer"
+    },
+    "contact": {
+      "title": "Contact"
+    },
+    "social": {
+      "title": "Social Media"
+    },
+    "copyright": "© 2025 YES Vote - All rights reserved",
+    "madeWith": "Made with",
+    "forBangladesh": "for Bangladesh"
+  }
+}

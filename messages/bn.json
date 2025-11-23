@@ -1,0 +1,148 @@
+{
+  "nav": {
+    "home": "হোম",
+    "blog": "ব্লগ",
+    "media": "মিডিয়া",
+    "volunteer": "স্বেচ্ছাসেবক",
+    "login": "লগইন"
+  },
+  "hero": {
+    "badge": "জুলাই গণঅভ্যুত্থান ২০২৪",
+    "title": "জুলাই সনদের পক্ষে হ্যাঁ ভোট দিন",
+    "subtitle": "শহীদদের স্বপ্ন বাস্তবায়ন করুন। নতুন বাংলাদেশ গড়ুন।",
+    "cta": "স্বেচ্ছাসেবক হোন",
+    "learnMore": "আরও জানুন",
+    "stats": {
+      "martyrs": "শহীদ",
+      "volunteers": "স্বেচ্ছাসেবক",
+      "future": "নতুন ভবিষ্যৎ"
+    },
+    "scrollDown": "স্ক্রল করুন"
+  },
+  "features": {
+    "title": "কেন জুলাই সনদ?",
+    "subtitle": "শহীদদের রক্তে লেখা সংবিধান",
+    "items": {
+      "democracy": {
+        "title": "প্রকৃত গণতন্ত্র",
+        "description": "জনগণের কাছে ক্ষমতা ফিরিয়ে দেওয়া"
+      },
+      "rights": {
+        "title": "মৌলিক অধিকার",
+        "description": "সকলের জন্য সমান সুযোগ এবং ন্যায়বিচার"
+      },
+      "future": {
+        "title": "উন্নত ভবিষ্যৎ",
+        "description": "তরুণ প্রজন্মের জন্য নতুন সম্ভাবনা"
+      },
+      "unity": {
+        "title": "জাতীয় ঐক্য",
+        "description": "সকল জাতি-ধর্ম-বর্ণের মানুষের একতা"
+      }
+    }
+  },
+  "cta": {
+    "title": "আজই যোগ দিন আমাদের আন্দোলনে",
+    "subtitle": "প্রতিটি হ্যাঁ ভোট শহীদদের প্রতি শ্রদ্ধা",
+    "button": "স্বেচ্ছাসেবক নিবন্ধন"
+  },
+  "volunteer": {
+    "title": "স্বেচ্ছাসেবক নিবন্ধন",
+    "subtitle": "শহীদদের স্বপ্নকে বাস্তবে পরিণত করতে আমাদের সাথে যোগ দিন",
+    "step": "ধাপ",
+    "of": "এর",
+    "previous": "পূর্ববর্তী",
+    "next": "পরবর্তী",
+    "submit": "জমা দিন",
+    "submitting": "জমা দেওয়া হচ্ছে...",
+    "step1Title": "ব্যক্তিগত তথ্য",
+    "step2Title": "সোশ্যাল মিডিয়া",
+    "step3Title": "স্বেচ্ছাসেবার ধরণ",
+    "step4Title": "সংগঠন",
+    "fullName": "পূর্ণ নাম",
+    "fullNamePlaceholder": "আপনার নাম লিখুন",
+    "mobile": "মোবাইল নম্বর",
+    "mobilePlaceholder": "01XXXXXXXXX",
+    "email": "ইমেইল (ঐচ্ছিক)",
+    "emailPlaceholder": "your@email.com",
+    "facebook": "Facebook (ঐচ্ছিক)",
+    "facebookPlaceholder": "https://facebook.com/yourprofile",
+    "twitter": "Twitter (ঐচ্ছিক)",
+    "twitterPlaceholder": "https://twitter.com/yourprofile",
+    "instagram": "Instagram (ঐচ্ছিক)",
+    "instagramPlaceholder": "https://instagram.com/yourprofile",
+    "volunteerTypes": "আপনি কোন ধরনের স্বেচ্ছাসেবা করতে আগ্রহী?",
+    "types": {
+      "field": "মাঠ পর্যায়ের কাজ",
+      "social": "সোশ্যাল মিডিয়া ক্যাম্পেইন",
+      "content": "কনটেন্ট তৈরি",
+      "translation": "অনুবাদ",
+      "event": "ইভেন্ট সংগঠন",
+      "any": "যেকোনো ধরণের কাজ"
+    },
+    "hasOrganization": "আপনি কোনো সংগঠনের সাথে যুক্ত আছেন?",
+    "yes": "হ্যাঁ",
+    "no": "না",
+    "organizationName": "সংগঠনের নাম",
+    "organizationPlaceholder": "সংগঠনের নাম লিখুন",
+    "success": {
+      "title": "ধন্যবাদ!",
+      "message": "আপনার নিবন্ধন সফলভাবে জমা দেওয়া হয়েছে। আমরা শীঘ্রই আপনার সাথে যোগাযোগ করব।",
+      "shareMessage": "বন্ধুদের সাথে শেয়ার করুন",
+      "shareTitle": "আমি জুলাই সনদের পক্ষে হ্যাঁ ভোট আন্দোলনের স্বেচ্ছাসেবক! আপনিও যোগ দিন।",
+      "backHome": "হোম পেজে ফিরে যান"
+    },
+    "errors": {
+      "submitError": "কিছু ভুল হয়েছে। অনুগ্রহ করে আবার চেষ্টা করুন।"
+    }
+  },
+  "blog": {
+    "title": "ব্লগ",
+    "subtitle": "জুলাই সনদ সম্পর্কে জানুন",
+    "featured": "বৈশিষ্ট্যযুক্ত",
+    "readMore": "আরও পড়ুন",
+    "views": "ভিউ",
+    "likes": "লাইক",
+    "share": "শেয়ার করুন",
+    "shareOn": "শেয়ার করুন",
+    "relatedPosts": "সম্পর্কিত পোস্ট"
+  },
+  "media": {
+    "title": "মিডিয়া গ্যালারি",
+    "subtitle": "গণঅভ্যুত্থানের ছবি ও ভিডিও",
+    "tabs": {
+      "all": "সব",
+      "martyrs": "শহীদ",
+      "protests": "বিক্ষোভ",
+      "youth": "তরুণ",
+      "campaign": "ক্যাম্পেইন",
+      "general": "সাধারণ"
+    },
+    "noMedia": "এই ক্যাটাগরিতে কোনো মিডিয়া নেই",
+    "download": "ডাউনলোড",
+    "share": "শেয়ার",
+    "close": "বন্ধ করুন"
+  },
+  "footer": {
+    "about": {
+      "title": "আমাদের সম্পর্কে",
+      "description": "জুলাই সনদের পক্ষে হ্যাঁ ভোট আন্দোলন। শহীদদের স্বপ্ন বাস্তবায়নে আমরা প্রতিশ্রুতিবদ্ধ।"
+    },
+    "links": {
+      "title": "লিংক",
+      "home": "হোম",
+      "blog": "ব্লগ",
+      "media": "মিডিয়া",
+      "volunteer": "স্বেচ্ছাসেবক"
+    },
+    "contact": {
+      "title": "যোগাযোগ"
+    },
+    "social": {
+      "title": "সোশ্যাল মিডিয়া"
+    },
+    "copyright": "© ২০২৫ হ্যাঁ ভোট - সর্বস্বত্ব সংরক্ষিত",
+    "madeWith": "তৈরি করা হয়েছে",
+    "forBangladesh": "বাংলাদেশের জন্য"
+  }
+}
