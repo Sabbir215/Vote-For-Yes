@@ -42,7 +42,7 @@ export function FeaturesSection() {
       ref={ref}
       className="py-20 md:py-32 bg-gradient-to-b from-white to-gray-50 relative overflow-hidden"
     >
-      <FloatingSlogans count={15} className="opacity-20" />
+      <FloatingSlogans count={100} className="opacity-30" />
       <div className="container mx-auto px-4 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 30 }}

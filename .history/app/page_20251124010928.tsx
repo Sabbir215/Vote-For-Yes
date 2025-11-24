@@ -11,7 +11,7 @@ export default async function HomePage() {
 
   return (
     <main className="relative min-h-screen overflow-hidden">
-      <FloatingSlogans count={30} />
+      <FloatingSlogans count={250} />
       <Navbar locale={locale} />
       <HeroSection />
       <FeaturesSection />

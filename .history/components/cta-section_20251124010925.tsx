@@ -16,7 +16,7 @@ export function CTASection() {
       ref={ref}
       className="py-20 md:py-32 bg-gradient-to-br from-green-600 via-green-700 to-red-600 relative overflow-hidden"
     >
-      <FloatingSlogans count={20} className="opacity-10" />
+      <FloatingSlogans count={80} className="opacity-20" />
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-10">
         <div

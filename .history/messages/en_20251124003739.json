@@ -94,9 +94,7 @@
       "backHome": "Back to Home"
     },
     "errors": {
-      "submitError": "Something went wrong. Please try again.",
-      "duplicateMobile": "This phone number is already registered.",
-      "duplicateEmail": "This email is already registered."
+      "submitError": "Something went wrong. Please try again."
     }
   },
   "blog": {

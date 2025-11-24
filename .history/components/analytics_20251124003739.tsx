@@ -1,7 +1,7 @@
-"use client";
+'use client';
 
-import Script from "next/script";
-import { useEffect } from "react";
+import Script from 'next/script';
+import { useEffect } from 'react';
 
 declare global {
   interface Window {
@@ -90,18 +90,15 @@ export function OneSignalPush() {
   );
 }
 
-export function trackEvent(
-  eventName: string,
-  parameters?: Record<string, any>
-) {
-  if (typeof window !== "undefined" && window.gtag) {
-    window.gtag("event", eventName, parameters);
+export function trackEvent(eventName: string, parameters?: Record<string, any>) {
+  if (typeof window !== 'undefined' && window.gtag) {
+    window.gtag('event', eventName, parameters);
   }
 }
 
 export function trackPageView(url: string) {
-  if (typeof window !== "undefined" && window.gtag) {
-    window.gtag("config", process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID!, {
+  if (typeof window !== 'undefined' && window.gtag) {
+    window.gtag('config', process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID!, {
       page_path: url,
     });
   }

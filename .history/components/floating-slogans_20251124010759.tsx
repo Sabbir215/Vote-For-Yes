@@ -1,7 +1,7 @@
-"use client";
+'use client'
 
-import { AnimatePresence, motion } from "framer-motion";
-import { useEffect, useState } from "react";
+import { useEffect, useState } from 'react'
+import { motion, AnimatePresence } from 'framer-motion'
 
 const slogans = [
   "দেশ আর এভাবে চলতে পারে না, পরিবর্তনের জন্যে হ্যাঁ বলুন",
@@ -85,70 +85,65 @@ const slogans = [
   "Unity is Strength",
   "হ্যাঁ মানে হ্যাঁ",
   "YES means YES",
-];
+]
 
 interface FloatingSloganProps {
-  count?: number;
-  className?: string;
+  count?: number
+  className?: string
 }
 
 interface SloganData {
-  text: string;
-  id: string;
-  randomX: number;
-  randomY: number;
-  randomDuration: number;
-  randomDelay: number;
-  randomRotate: number;
-  randomOpacity: number;
-  direction: number;
-  moveDistance: number;
+  text: string
+  id: string
+  randomX: number
+  randomY: number
+  randomDuration: number
+  randomDelay: number
+  randomRotate: number
+  randomOpacity: number
+  direction: number
+  moveDistance: number
 }
 
-export function FloatingSlogans({
-  count = 30,
-  className = "",
-}: FloatingSloganProps) {
-  const [displaySlogans, setDisplaySlogans] = useState<SloganData[]>([]);
-  const [mounted, setMounted] = useState(false);
+export function FloatingSlogans({ count = 100, className = '' }: FloatingSloganProps) {
+  const [displaySlogans, setDisplaySlogans] = useState<SloganData[]>([])
+  const [mounted, setMounted] = useState(false)
 
   useEffect(() => {
-    setMounted(true);
+    setMounted(true)
     // Generate random positions and slogans
     const randomSlogans = Array.from({ length: count }, (_, i) => {
-      const startX = Math.random() * 100;
-      const startY = Math.random() * 100;
+      const startX = Math.random() * 100
+      const startY = Math.random() * 100
       // Random direction: left or right
-      const direction = Math.random() > 0.5 ? 1 : -1;
-      const moveDistance = 10 + Math.random() * 30;
-
+      const direction = Math.random() > 0.5 ? 1 : -1
+      const moveDistance = 10 + Math.random() * 30
+      
       return {
         text: slogans[Math.floor(Math.random() * slogans.length)],
         id: `slogan-${i}`,
         randomX: startX,
         randomY: startY,
-        randomDuration: 25 + Math.random() * 35,
+        randomDuration: 20 + Math.random() * 30,
         randomDelay: Math.random() * 10,
-        randomRotate: (Math.random() - 0.5) * 8,
-        randomOpacity: 0.1 + Math.random() * 0.15,
+        randomRotate: (Math.random() - 0.5) * 10,
+        randomOpacity: 0.15 + Math.random() * 0.25,
         direction,
         moveDistance,
-      };
-    });
-    setDisplaySlogans(randomSlogans);
-  }, [count]);
+      }
+    })
+    setDisplaySlogans(randomSlogans)
+  }, [count])
 
-  if (!mounted) return null;
+  if (!mounted) return null
 
   return (
-    <div
-      className={`fixed inset-0 pointer-events-none overflow-hidden ${className}`}
-    >
+    <div className={`fixed inset-0 pointer-events-none overflow-hidden ${className}`}>
       <AnimatePresence>
         {displaySlogans.map((slogan) => {
-          const endX = slogan.randomX + slogan.direction * slogan.moveDistance;
-          const endY = (slogan.randomY + 20) % 100;
-
+          const endX = slogan.randomX + (slogan.direction * slogan.moveDistance)
+          const endY = (slogan.randomY + 20) % 100
+          
           return (
             <motion.div
               key={slogan.id}
@@ -162,29 +157,25 @@ export function FloatingSlogans({
                 x: [`${slogan.randomX}vw`, `${endX}vw`],
                 y: [`${slogan.randomY}vh`, `${endY}vh`],
                 opacity: [0, slogan.randomOpacity, slogan.randomOpacity, 0],
-                rotate: [
-                  slogan.randomRotate,
-                  slogan.randomRotate + slogan.direction * 3,
-                ],
+                rotate: [slogan.randomRotate, slogan.randomRotate + (slogan.direction * 3)],
               }}
               transition={{
                 duration: slogan.randomDuration,
                 delay: slogan.randomDelay,
                 repeat: Infinity,
-                repeatType: "reverse",
-                ease: "easeInOut",
+                repeatType: 'reverse',
+                ease: 'easeInOut',
               }}
               className="absolute whitespace-nowrap text-sm md:text-base font-semibold text-gray-700 dark:text-gray-300 select-none"
               style={{
-                textShadow:
-                  "0 1px 3px rgba(0,0,0,0.3), 0 0 20px rgba(255,255,255,0.5)",
+                textShadow: '0 1px 3px rgba(0,0,0,0.3), 0 0 20px rgba(255,255,255,0.5)',
               }}
             >
               {slogan.text}
             </motion.div>
-          );
+          )
         })}
       </AnimatePresence>
     </div>
-  );
+  )
 }

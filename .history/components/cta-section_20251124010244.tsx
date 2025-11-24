@@ -1,32 +1,26 @@
-"use client";
+'use client'
 
-import { motion, useInView } from "framer-motion";
-import { ArrowRight } from "lucide-react";
-import Link from "next/link";
-import { useRef } from "react";
-import { FloatingSlogans } from "./floating-slogans";
-import { Button } from "./ui/button";
+import { Button } from './ui/button'
+import { ArrowRight } from 'lucide-react'
+import Link from 'next/link'
+import { motion } from 'framer-motion'
+import { useInView } from 'framer-motion'
+import { useRef } from 'react'
+import { FloatingSlogans } from './floating-slogans'
 
 export function CTASection() {
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true });
+  const ref = useRef(null)
+  const isInView = useInView(ref, { once: true })
 
   return (
-    <section
-      ref={ref}
-      className="py-20 md:py-32 bg-gradient-to-br from-green-600 via-green-700 to-red-600 relative overflow-hidden"
-    >
-      <FloatingSlogans count={20} className="opacity-10" />
+    <section ref={ref} className="py-20 md:py-32 bg-gradient-to-br from-green-600 via-green-700 to-red-600 relative overflow-hidden">
+      <FloatingSlogans count={80} className="opacity-20" />
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-10">
-        <div
-          className="absolute inset-0"
-          style={{
-            backgroundImage:
-              "radial-gradient(circle at 2px 2px, white 1px, transparent 0)",
-            backgroundSize: "40px 40px",
-          }}
-        />
+        <div className="absolute inset-0" style={{
+          backgroundImage: 'radial-gradient(circle at 2px 2px, white 1px, transparent 0)',
+          backgroundSize: '40px 40px'
+        }} />
       </div>
 
       <div className="container mx-auto px-4 relative z-10">
@@ -42,11 +36,11 @@ export function CTASection() {
           <p className="text-xl md:text-2xl opacity-90">
             লক্ষ লক্ষ মানুষের সাথে একসাথে গড়ুন নতুন বাংলাদেশ
           </p>
-
+          
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center pt-8">
             <Link href="/volunteer">
-              <Button
-                size="lg"
+              <Button 
+                size="lg" 
                 className="bg-white text-green-700 hover:bg-gray-100 font-bold text-lg px-10 py-7 rounded-full shadow-2xl hover:shadow-white/50 transition-all duration-300 group"
               >
                 স্বেচ্ছাসেবক হন
@@ -54,8 +48,8 @@ export function CTASection() {
               </Button>
             </Link>
             <Link href="/blog">
-              <Button
-                size="lg"
+              <Button 
+                size="lg" 
                 variant="outline"
                 className="border-2 border-white text-white hover:bg-white/20 font-semibold text-lg px-10 py-7 rounded-full backdrop-blur-md"
               >
@@ -77,5 +71,5 @@ export function CTASection() {
         </motion.div>
       </div>
     </section>
-  );
+  )
 }

@@ -106,7 +106,7 @@ interface SloganData {
 }
 
 export function FloatingSlogans({
-  count = 30,
+  count = 100,
   className = "",
 }: FloatingSloganProps) {
   const [displaySlogans, setDisplaySlogans] = useState<SloganData[]>([]);

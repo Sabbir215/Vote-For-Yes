@@ -10,7 +10,7 @@
   --color-red-50: #fef2f2;
   --color-red-600: #dc2626;
   --color-red-700: #b91c1c;
-  
+
   --color-border: 214.3 31.8% 91.4%;
   --color-background: 0 0% 100%;
   --color-foreground: 222.2 84% 4.9%;
@@ -49,4 +49,47 @@ html {
 
 ::-webkit-scrollbar-thumb:hover {
   background-color: var(--color-green-700);
+}
+
+/* Modern Animations */
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animate-gradient {
+  animation: gradient 3s ease infinite;
+}
+
+/* Smooth transitions */
+* {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+/* Focus visible improvements */
+:focus-visible {
+  outline: 2px solid var(--color-green-600);
+  outline-offset: 2px;
+}
+
+/* Improved text selection */
+::selection {
+  background-color: var(--color-green-600);
+  color: white;
+}
+
+::-moz-selection {
+  background-color: var(--color-green-600);
+  color: white;
 }

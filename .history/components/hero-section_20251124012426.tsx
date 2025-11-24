@@ -1,13 +1,13 @@
-"use client";
+'use client'
 
-import { AnimatePresence, motion } from "framer-motion";
-import { ArrowRight, Heart } from "lucide-react";
-import { useTranslations } from "next-intl";
-import Image from "next/image";
-import Link from "next/link";
-import { useEffect, useState } from "react";
-import { FloatingSlogans } from "./floating-slogans";
-import { Button } from "./ui/button";
+import { useTranslations } from 'next-intl'
+import { Button } from './ui/button'
+import { ArrowRight, Heart } from 'lucide-react'
+import Link from 'next/link'
+import Image from 'next/image'
+import { motion, AnimatePresence } from 'framer-motion'
+import { useState, useEffect } from 'react'
+import { FloatingSlogans } from './floating-slogans'
 
 // All slogans for the rotating showcase
 const allSlogans = [
@@ -92,18 +92,18 @@ const allSlogans = [
   "Unity is Strength",
   "হ্যাঁ মানে হ্যাঁ",
   "YES means YES",
-];
+]
 
 export function HeroSection() {
-  const t = useTranslations("hero");
-  const [currentSlogan, setCurrentSlogan] = useState(0);
+  const t = useTranslations('hero')
+  const [currentSlogan, setCurrentSlogan] = useState(0)
 
   useEffect(() => {
     const timer = setInterval(() => {
-      setCurrentSlogan((prev) => (prev + 1) % allSlogans.length);
-    }, 3000);
-    return () => clearInterval(timer);
-  }, []);
+      setCurrentSlogan((prev) => (prev + 1) % allSlogans.length)
+    }, 3000)
+    return () => clearInterval(timer)
+  }, [])
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
@@ -111,7 +111,7 @@ export function HeroSection() {
       <div className="absolute inset-0 z-[5]">
         <FloatingSlogans count={50} className="opacity-40" />
       </div>
-
+      
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <Image
@@ -135,9 +135,7 @@ export function HeroSection() {
             className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-white"
           >
             <Heart className="w-4 h-4 text-red-500 fill-red-500" />
-            <span className="text-sm font-medium">
-              জুলাই বিপ্লব | July Revolution 2024
-            </span>
+            <span className="text-sm font-medium">জুলাই বিপ্লব | July Revolution 2024</span>
           </motion.div>
 
           {/* Main Heading */}
@@ -147,7 +145,7 @@ export function HeroSection() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-4xl md:text-6xl lg:text-7xl font-bold text-white leading-tight"
           >
-            {t("title")}
+            {t('title')}
           </motion.h1>
 
           {/* Subtitle */}
@@ -157,7 +155,7 @@ export function HeroSection() {
             transition={{ duration: 0.6, delay: 0.4 }}
             className="text-xl md:text-2xl text-gray-200 max-w-2xl mx-auto"
           >
-            {t("subtitle")}
+            {t('subtitle')}
           </motion.p>
 
           {/* Featured Slogan Showcase */}
@@ -178,23 +176,23 @@ export function HeroSection() {
                   transition={{ duration: 0.5 }}
                   className="text-2xl md:text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-400 via-white to-red-400 px-4 text-center"
                   style={{
-                    textShadow: "0 0 30px rgba(255,255,255,0.3)",
+                    textShadow: '0 0 30px rgba(255,255,255,0.3)',
                   }}
                 >
                   "{allSlogans[currentSlogan]}"
                 </motion.div>
               </AnimatePresence>
             </div>
-
+            
             {/* Progress Indicators */}
             <div className="flex gap-2 justify-center mt-4">
               {allSlogans.map((_, index) => (
                 <motion.div
                   key={index}
                   className={`h-1 rounded-full transition-all duration-300 ${
-                    index === currentSlogan
-                      ? "w-8 bg-gradient-to-r from-green-500 to-red-500"
-                      : "w-2 bg-white/30"
+                    index === currentSlogan 
+                      ? 'w-8 bg-gradient-to-r from-green-500 to-red-500' 
+                      : 'w-2 bg-white/30'
                   }`}
                   animate={{
                     scale: index === currentSlogan ? 1.2 : 1,
@@ -212,21 +210,21 @@ export function HeroSection() {
             className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-8"
           >
             <Link href="/volunteer">
-              <Button
-                size="lg"
+              <Button 
+                size="lg" 
                 className="bg-gradient-to-r from-green-600 to-red-600 hover:from-green-700 hover:to-red-700 text-white font-bold text-lg px-8 py-6 rounded-full shadow-2xl hover:shadow-green-500/50 transition-all duration-300 group"
               >
-                {t("cta")}
+                {t('cta')}
                 <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
               </Button>
             </Link>
             <Link href="/about">
-              <Button
-                size="lg"
+              <Button 
+                size="lg" 
                 variant="outline"
                 className="border-2 border-white/30 text-white hover:bg-white/10 font-semibold text-lg px-8 py-6 rounded-full backdrop-blur-md"
               >
-                {t("learnMore")}
+                {t('learnMore')}
               </Button>
             </Link>
           </motion.div>
@@ -239,14 +237,12 @@ export function HeroSection() {
             className="grid grid-cols-3 gap-8 pt-16 max-w-2xl mx-auto"
           >
             {[
-              { label: "শহীদ | Martyrs", value: "1000+" },
-              { label: "ভলান্টিয়ার | Volunteers", value: "10K+" },
-              { label: "নতুন ভবিষ্যৎ | New Future", value: "১" },
+              { label: 'শহীদ | Martyrs', value: '1000+' },
+              { label: 'ভলান্টিয়ার | Volunteers', value: '10K+' },
+              { label: 'নতুন ভবিষ্যৎ | New Future', value: '১' },
             ].map((stat, i) => (
               <div key={i} className="text-center">
-                <div className="text-3xl md:text-4xl font-bold text-white mb-2">
-                  {stat.value}
-                </div>
+                <div className="text-3xl md:text-4xl font-bold text-white mb-2">{stat.value}</div>
                 <div className="text-sm text-gray-300">{stat.label}</div>
               </div>
             ))}
@@ -270,5 +266,5 @@ export function HeroSection() {
         </motion.div>
       </motion.div>
     </section>
-  );
+  )
 }

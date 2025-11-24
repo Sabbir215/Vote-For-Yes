@@ -106,7 +106,7 @@ interface SloganData {
 }
 
 export function FloatingSlogans({
-  count = 30,
+  count = 100,
   className = "",
 }: FloatingSloganProps) {
   const [displaySlogans, setDisplaySlogans] = useState<SloganData[]>([]);
@@ -127,10 +127,10 @@ export function FloatingSlogans({
         id: `slogan-${i}`,
         randomX: startX,
         randomY: startY,
-        randomDuration: 25 + Math.random() * 35,
+        randomDuration: 20 + Math.random() * 30,
         randomDelay: Math.random() * 10,
-        randomRotate: (Math.random() - 0.5) * 8,
-        randomOpacity: 0.1 + Math.random() * 0.15,
+        randomRotate: (Math.random() - 0.5) * 10,
+        randomOpacity: 0.15 + Math.random() * 0.25,
         direction,
         moveDistance,
       };

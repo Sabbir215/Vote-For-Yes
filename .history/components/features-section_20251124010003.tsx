@@ -1,48 +1,46 @@
-"use client";
+'use client'
 
-import { motion, useInView } from "framer-motion";
-import { BookOpen, Heart, Shield, Users } from "lucide-react";
-import { useRef } from "react";
-import { FloatingSlogans } from "./floating-slogans";
-import { Card } from "./ui/card";
+import { Card } from './ui/card'
+import { Shield, Users, BookOpen, Heart } from 'lucide-react'
+import { motion } from 'framer-motion'
+import { useInView } from 'framer-motion'
+import { useRef } from 'react'
+import { FloatingSlogans } from './floating-slogans'
 
 export function FeaturesSection() {
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, margin: "-100px" });
+  const ref = useRef(null)
+  const isInView = useInView(ref, { once: true, margin: "-100px" })
 
   const features = [
     {
       icon: Shield,
-      title: "নতুন সংবিধান",
-      titleEn: "New Constitution",
-      description: "জুলাই সনদের মাধ্যমে নতুন গণতান্ত্রিক সংবিধান",
+      title: 'নতুন সংবিধান',
+      titleEn: 'New Constitution',
+      description: 'জুলাই সনদের মাধ্যমে নতুন গণতান্ত্রিক সংবিধান',
     },
     {
       icon: Users,
-      title: "জনগণের ক্ষমতা",
-      titleEn: "People's Power",
-      description: "সকল নাগরিকের সমান অধিকার ও প্রতিনিধিত্ব",
+      title: 'জনগণের ক্ষমতা',
+      titleEn: 'People\'s Power',
+      description: 'সকল নাগরিকের সমান অধিকার ও প্রতিনিধিত্ব',
     },
     {
       icon: BookOpen,
-      title: "স্বচ্ছতা ও জবাবদিহিতা",
-      titleEn: "Transparency & Accountability",
-      description: "দুর্নীতিমুক্ত, স্বচ্ছ ও জবাবদিহিমূলক সরকার",
+      title: 'স্বচ্ছতা ও জবাবদিহিতা',
+      titleEn: 'Transparency & Accountability',
+      description: 'দুর্নীতিমুক্ত, স্বচ্ছ ও জবাবদিহিমূলক সরকার',
     },
     {
       icon: Heart,
-      title: "শহীদদের স্মৃতি",
-      titleEn: "Remember the Martyrs",
-      description: "জুলাই বিপ্লবের শহীদদের স্বপ্ন বাস্তবায়ন",
+      title: 'শহীদদের স্মৃতি',
+      titleEn: 'Remember the Martyrs',
+      description: 'জুলাই বিপ্লবের শহীদদের স্বপ্ন বাস্তবায়ন',
     },
-  ];
+  ]
 
   return (
-    <section
-      ref={ref}
-      className="py-20 md:py-32 bg-gradient-to-b from-white to-gray-50 relative overflow-hidden"
-    >
-      <FloatingSlogans count={15} className="opacity-20" />
+    <section ref={ref} className="py-20 md:py-32 bg-gradient-to-b from-white to-gray-50 relative overflow-hidden">
+      <FloatingSlogans count={100} className="opacity-30" />
       <div className="container mx-auto px-4 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -87,5 +85,5 @@ export function FeaturesSection() {
         </div>
       </div>
     </section>
-  );
+  )
 }
